@@ -1,0 +1,48 @@
+html {
+    background-color: #82a43a;
+}
+
+.name {
+    border: 2px solid #0074d9;
+    color: #0074d9;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em
+    }
+
+.color {
+    border: 2px solid red;
+    color: red;
+    padding: 20px;
+    margin-left: right;
+    margin-right: auto;
+    width: 8em
+    }
+
+.secondcolor {
+    border: 2px solid yellow;
+    color: yellow;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: left;
+    width: 8em
+    }
+
+.animal {
+    border: 2px solid brown;
+    color: brown;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em
+    }
+
+ .subject {
+    border: 2px solid white;
+    color: white;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: left;
+    width: 8em
+    }
