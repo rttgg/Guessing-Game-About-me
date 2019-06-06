@@ -65,15 +65,20 @@ function step5(){
   }
 }
 function step6(){
-  var howManyMovies= prompt('Can you guess how many movies i have watched this year?');
-  console.log(howManyMovies);
-  if(howManyMovies === '5' ) {
-    alert('that\'s right, i have watched ' + howManyMovies + ' movies!');
-    tries++;
-  } else if (howManyMovies > 5 ) {
-    alert('that\'s too high!');
-  } else if (howManyMovies < 5 ) {
-    alert('that\'s too low');
+
+  var numberOfTries = 0;
+  while(numberOfTries < 4){
+    var howManyMovies= prompt('Can you guess how many movies i have watched this year?');
+    console.log(howManyMovies);
+    if(howManyMovies === '5' ) {
+      alert('that\'s right, i have watched ' + howManyMovies + ' movies!');
+      tries++;
+    } else if (howManyMovies > 5 ) {
+      alert('that\'s too high!');
+    } else if (howManyMovies < 5 ) {
+      alert('that\'s too low');
+    }
+    numberOfTries++;
   }
 }
 
@@ -88,7 +93,7 @@ function step7(){
   while (attempt < 6) {
     for (var i = 0; i < typeOfCar.length; i++){
       if(myCar === typeOfCar[i]){
-        alert('that\'s correct try the rest');
+        alert('that\'s correct try the rest' + typeOfCar[i]);
         tries++;
         break loop2;
       }
@@ -96,7 +101,12 @@ function step7(){
     myCar = prompt('try again');
     attempt++;
   }
+
+  for (var carIndex=0; carIndex < typeOfCar.length; carIndex++){
+    alert(typeOfCar[carIndex]);
+  }
 }
+
 
 if (tries >= 6) {
   alert(name + ' WOW! You\'re very smart');
