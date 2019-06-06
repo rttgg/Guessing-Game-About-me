@@ -51,19 +51,19 @@ var myFirstName = prompt('Is my nick name is Roma?').toLowerCase();
  }
 
 
-var myCar = prompt('what kind of car do i like?');
- console.log(myCar);
- var count = 6; 
-var typeOfCar = ['Honda' , 'Toyota' , 'Tesla', 'Ford', 'BMW', 'Jaguar'];
+var myCar = prompt('what kind of car do i like?').toLowerCase();
+console.log(myCar);
+var count = 6; 
+var typeOfCar = ['honda' , 'toyota' , 'tesla', 'ford', 'bmw', 'jaguar'];
 for (var i = 0; i < typeOfCar.length; i++){
-   if(myCar === typeOfCar[i]) {
-       console.log('try again');
-     alert('that\'s correct')
-    } else if ( myCar !== typeOfCar[i]) {
+if(myCar === typeOfCar[i]) {
+       //console.log('wow! that\'s right try the rest');
+     alert('that\'s correct try the rest');
+ } else if ( myCar !== typeOfCar[i]) {
        count--;
           alert('try again')
            var tries = prompt('you have ' + count + ' tries left')
-     }  else { count === 0; 'the possible answers are Honda, Toyota, Tesla, Ford, BMW, Jaguar, Chrysler'}
+     }  else {alert('the possible answers are Honda, Toyota, Tesla, Ford, BMW, Jaguar, Chrysler')}
    }
   
     
