@@ -1,5 +1,10 @@
 'use strict';
 
+step1();
+step2();
+step3();
+step4();
+
 function step1(){
   var myFirstName = prompt('Is my nick name is Roma?').toLowerCase();
   console.log(myFirstName);
@@ -9,8 +14,6 @@ function step1(){
     alert('WRONG! it is Roma.');
   }
 }
-
-step1();
 
 function step2(){
   var myFavoriteColor = prompt('Is my favorite color is gray?').toLowerCase();
@@ -22,22 +25,24 @@ function step2(){
   }
 }
 
-step2();
-
-var myFavoriteAnimal = prompt('Do you think my favorite animal is Dog?').toLowerCase();
-console.log(myFavoriteAnimal);
-if(myFavoriteAnimal === 'yes' || myFavoriteAnimal === 'YES' || myFavoriteAnimal === 'y') {
-  alert('yes! that\'s right, i love dog and i have one! ');
-} else {
-  alert('NOPE! you should know this.');
+function step3(){
+  var myFavoriteAnimal = prompt('Do you think my favorite animal is Dog?').toLowerCase();
+  console.log(myFavoriteAnimal);
+  if(myFavoriteAnimal === 'yes' || myFavoriteAnimal === 'YES' || myFavoriteAnimal === 'y') {
+    alert('yes! that\'s right, i love dog and i have one! ');
+  } else {
+    alert('NOPE! you should know this.');
+  }
 }
 
-var myFavoriteMovie = prompt('Do you think i like to watch movies?').toLowerCase();
-console.log(myFavoriteMovie);
-if(myFavoriteMovie === 'yes' || myFavoriteMovie === 'YES' || myFavoriteMovie === 'y') {
-  alert('that\'s right, one of my favorite movie is Lord of the ring.');
-} else {
-  alert('Wrong! It is my favorite.');
+function step4(){
+  var myFavoriteMovie = prompt('Do you think i like to watch movies?').toLowerCase();
+  console.log(myFavoriteMovie);
+  if(myFavoriteMovie === 'yes' || myFavoriteMovie === 'YES' || myFavoriteMovie === 'y') {
+    alert('that\'s right, one of my favorite movie is Lord of the ring.');
+  } else {
+    alert('Wrong! It is my favorite.');
+  }
 }
 
 var myFavoriteSubject = prompt('Do you think i like Math\'s?').toLowerCase();
