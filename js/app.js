@@ -8,6 +8,8 @@ step5();
 step6();
 step7();
 
+
+
 var tries = 0;
 
 function step1(){
@@ -93,7 +95,7 @@ function step7(){
   while (attempt < 6) {
     for (var i = 0; i < typeOfCar.length; i++){
       if(myCar === typeOfCar[i]){
-        alert('that\'s correct try the rest' + typeOfCar[i]);
+        alert('that\'s correct');
         tries++;
         break loop2;
       }
@@ -102,17 +104,18 @@ function step7(){
     attempt++;
   }
 
+  var allCars = '';
   for (var carIndex=0; carIndex < typeOfCar.length; carIndex++){
-    alert(typeOfCar[carIndex]);
+    allCars = allCars + typeOfCar[carIndex] + ' ';
   }
+  alert('my favorite cars are: ' + allCars);
+
 }
 
-
-if (tries >= 6) {
+console.log(tries);
+if (tries < 6){
   alert(name + ' WOW! You\'re very smart');
+  tries ++;
 } else {
-  alert(name + ' you got ' + tries+' out of 6 correct.');
+  alert(name + ' you got ' + tries + ' out of 6 correct.');
 }
-console.log('tries: ' + tries);
-
-
