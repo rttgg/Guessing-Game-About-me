@@ -48,7 +48,7 @@ function step3(){
 function step4(){
   var myFavoriteMovie = prompt('Do you think i like to watch movies?').toLowerCase();
   console.log(myFavoriteMovie);
-  if(myFavoriteMovie === 'yes' || myFavoriteMovie === 'YES' || myFavoriteMovie === 'y') {
+  if(myFavoriteMovie === 'no' || myFavoriteMovie === 'n') {
     alert('that\'s right, one of my favorite movie is Lord of the ring.');
     tries++;
   } else {
@@ -66,23 +66,46 @@ function step5(){
     alert('Nope! I hope you know now.');
   }
 }
-function step6(){
+// function step6(){
 
-  var numberOfTries = 0;
-  while(numberOfTries < 4){
+//   var numberOfTries = 0;
+//   while(numberOfTries < 4){
+//     var howManyMovies= prompt('Can you guess how many movies i have watched this year?');
+//     console.log(howManyMovies);
+//     if(howManyMovies === '5' ) {
+//       alert('that\'s right, i have watched ' + howManyMovies + ' movies!');
+//       break;
+//       //tries++;
+      
+//     } else if (howManyMovies > 5 ) {
+//       alert('that\'s too high!');
+//     } else if (howManyMovies < 5 ) {
+//       alert('that\'s too low');
+//     }
+//     //numberOfTries++;
+//   }
+
+function step6(){
+  for ( var i = 0; i < 4; i++){
     var howManyMovies= prompt('Can you guess how many movies i have watched this year?');
-    console.log(howManyMovies);
-    if(howManyMovies === '5' ) {
-      alert('that\'s right, i have watched ' + howManyMovies + ' movies!');
-      tries++;
-    } else if (howManyMovies > 5 ) {
-      alert('that\'s too high!');
-    } else if (howManyMovies < 5 ) {
-      alert('that\'s too low');
+    /*if # of tries are < 4 and if they didn't pick the right answer
+    and if they got the right answer alert "you got it" you got the right answer 
+    break */
+    if (howManyMovies === '5'){
+      alert('you got it right!');
+      console.log('before break');
+      break;
+      
     }
-    numberOfTries++;
+    else if (howManyMovies < 5){
+      alert('that\'s too low!');
+    } else if (howManyMovies > 5){
+      alert('that\'s too high!');
+    }
   }
 }
+
+
 
 function step7(){
   var typeOfCar = ['honda' , 'toyota' , 'tesla', 'ford', 'bmw', 'jaguar'];
