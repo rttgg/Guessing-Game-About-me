@@ -16,23 +16,23 @@ function step1(){
   var myFirstName = prompt('Is my nick name is Roma?').toLowerCase();
   console.log(myFirstName);
   if(myFirstName === 'yes' || myFirstName === 'YES' || myFirstName === 'y') {
-    alert('that\'s correct');
+    alert('That\'s correct');
     tries++;
     console.log(tries);
   } else {
-    alert('WRONG! it is Roma.');
+    alert('Wrong! it is Roma.');
   }
 }
 
 function step2(){
-  var myFavoriteColor = prompt('Is my favorite color is gray?').toLowerCase();
+  var myFavoriteColor = prompt('Do you think i like to travel?').toLowerCase();
   console.log(myFavoriteColor);
   if(myFavoriteColor === 'yes' || myFavoriteColor === 'YES' || myFavoriteColor=== 'y') {
-    alert('yes! that is right!');
+    alert('Yes! that is right!');
     tries++;
     console.log(tries);
   } else {
-    alert('Sorry, it is!');
+    alert('Sorry, I love traveling!');
   }
 }
 
@@ -40,31 +40,31 @@ function step3(){
   var myFavoriteAnimal = prompt('Do you think my favorite animal is Dog?').toLowerCase();
   console.log(myFavoriteAnimal);
   if(myFavoriteAnimal === 'yes' || myFavoriteAnimal === 'YES' || myFavoriteAnimal === 'y') {
-    alert('yes! that\'s right, i love dog and i have one! ');
+    alert('Yes! that\'s right, I love dog and I have one! ');
     tries++;
     console.log(tries);
   } else {
-    alert('NOPE! you should know this.');
+    alert('Nope! You should know this.');
   }
 }
 
 function step4(){
-  var myFavoriteMovie = prompt('Do you think i like to watch movies?').toLowerCase();
+  var myFavoriteMovie = prompt('Do you think i like to ride a roller coaster?').toLowerCase();
   console.log(myFavoriteMovie);
   if(myFavoriteMovie === 'no' || myFavoriteMovie === 'n') {
-    alert('that\'s right, one of my favorite movie is Lord of the ring.');
+    alert('That\'s right, I don\'t like it');
     tries++;
     console.log(tries);
   } else {
-    alert('Wrong! It is my favorite.');
+    alert('Wrong!');
   }
 }
 
 function step5(){
-  var myFavoriteSubject = prompt('Do you think i like Math\'s?').toLowerCase();
+  var myFavoriteSubject = prompt('Do you think I like to play soccer?').toLowerCase();
   console.log(myFavoriteSubject);
   if(myFavoriteSubject === 'yes' || myFavoriteSubject === 'YES' || myFavoriteSubject === 'y') {
-    alert('that\'s right, i like Math\'s but it has been long time since i took it.');
+    alert('That\'s right, I love playing soccer, but it has been long time since I played.');
     tries++;
     console.log(tries);
   } else {
@@ -80,13 +80,13 @@ function step6(){
     and if they got the right answer alert "you got it" you got the right answer
     break */
     if (howManyMovies === '5'){
-      alert('you got it right!');
+      alert('You got it right!');
       break;
     }
     else if (howManyMovies < 5){
-      alert('that\'s too low!');
+      alert('That\'s too low!');
     } else if (howManyMovies > 5){
-      alert('that\'s too high!');
+      alert('That\'s too high!');
     }
   }
 }
@@ -96,7 +96,7 @@ function step6(){
 function step7(){
   var typeOfCar = ['honda' , 'toyota' , 'tesla', 'ford', 'bmw', 'jaguar'];
   console.log('typeOfCar: ' + typeOfCar);
-  var myCar = prompt('what kind of car do i like?').toLowerCase();
+  var myCar = prompt('What kind of car do i like?').toLowerCase();
   console.log('myCar: '+ myCar);
   var attempt = 1;
 
@@ -104,12 +104,12 @@ function step7(){
   while (attempt < 6) {
     for (var i = 0; i < typeOfCar.length; i++){
       if(myCar === typeOfCar[i]){
-        alert('that\'s correct');
+        alert('That\'s correct');
         tries++;
         break loop2;
       }
     }
-    myCar = prompt('try again');
+    myCar = prompt('Try again');
     attempt++;
   }
 
@@ -117,7 +117,7 @@ function step7(){
   for (var carIndex=0; carIndex < typeOfCar.length; carIndex++){
     allCars = allCars + typeOfCar[carIndex] + ' ';
   }
-  alert('my favorite cars are: ' + allCars);
+  alert('My favorite cars are: ' + allCars);
 
 }
 

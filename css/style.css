@@ -1,54 +1,59 @@
 html {
     background-color: #82a43a;
 }
-.animal {
+.animals {
     background-color: magenta;
-    border: 2px solid brown;
+    border: 10px solid brown;
     color: brown;
-    padding: 20px;
-    margin-left: auto;
-    margin-right: left;
-    width: 8em
+    padding: 5px;
+    margin-left: 100px;
+    margin-right: 500px;
+    width: auto;
+    height: auto;
     }
 
 .name {
     background-color: black;
     border: 2px solid #0074d9;
     color: #0074d9;
-    padding: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 8em
+    padding: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: auto;
+    height: auto;
+    text-align: center;
     }
 
-.color {
+.place {
     background-color: antiquewhite;
     border: 2px solid red;
     color: red;
-    padding: 20px;
-    margin-left: right;
-    margin-right: auto;
-    width: 8em
+    padding: 5px;
+    margin-left: 500px;
+    margin-right: 100px;
+    width: auto;
+    height: auto;
     }
-
-
 
 .movies {
     background-color: khaki;
     border: 2px solid brown;
     color: brown;
-    padding: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 8em
+    padding: 5px;
+    margin-left: 500px;
+    margin-right: 100px;
+    width: auto;
+    height: auto;
     } 
 
  .subject {
     background-color: lightcoral;
     border: 2px solid white;
     color: white;
-    padding: 20px;
-    margin-left: left;
-    margin-right: auto;
-    width: 8em
+    padding: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: auto;
+    height: auto;
+    text-align: center;
     }
